@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">BinaryGame</string>
-    <string name="x">x</string>
-    <string name="ranking">ランキング</string>
-    <string name="delete">削除</string>
-    <string name="intro">ゲーム説明</string>
-
-</resources>
