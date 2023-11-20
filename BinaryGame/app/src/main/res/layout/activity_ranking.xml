@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ranking">
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="63dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="4dp"
+        android:onClick="onExitButtonTapped"
+        android:text="@string/x"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="361dp"
+        android:layout_height="597dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/frame" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ranking"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="dataDelete"
+        android:text="@string/delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="181dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/first_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textAlignment="textEnd"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/second"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/first" />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="181dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/first" />
+
+    <TextView
+        android:id="@+id/second_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:textSize="32sp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/third"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/second" />
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="181dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/second" />
+
+    <TextView
+        android:id="@+id/third_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:textSize="32sp"
+        android:textAlignment="textEnd"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/third" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
